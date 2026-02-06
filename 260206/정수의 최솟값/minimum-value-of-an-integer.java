@@ -12,11 +12,11 @@ public class Main {
 
     public static int small(int a, int b, int c){
         int result = 0;
-        if(a<b && a<c){
+        if(a<=b && a<=c){
             result = a;
-        }else if (b<a && b<c){
+        }else if (b<=a && b<=c){
             result = b;
-        }else if (c<a && c<b){
+        }else if (c<=a && c<=b){
             result = c;
         }
         return result;
