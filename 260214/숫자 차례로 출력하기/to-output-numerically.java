@@ -3,9 +3,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        ascending(7);
+        ascending(n);
         System.out.println();
-        descending(7);
+        descending(n);
     }
 
     public static void ascending(int n){
