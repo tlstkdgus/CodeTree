@@ -14,7 +14,7 @@ public class Main {
         }
 
         ascending(n-1);
-        System.out.print(n + " ");
+        System.out.print(n+" ");
 
     }
 
@@ -22,8 +22,7 @@ public class Main {
         if (n==0){
             return;
         }
-
-        System.out.print(n + " ");
+        System.out.print(n+" ");
         descending(n-1);
     }
 }
