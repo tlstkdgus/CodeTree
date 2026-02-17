@@ -22,8 +22,11 @@ def get_date_dirs(base_path):
 def count_problems_in_dir(dir_path):
     """Count the number of problem directories (excluding README.md)"""
     items = os.listdir(dir_path)
-    # Count all items except README.md
-    problems = [item for item in items if item != 'README.md']
+    # Count only directories, excluding README.md and hidden files
+    problems = [item for item in items 
+                if item != 'README.md' 
+                and not item.startswith('.')
+                and os.path.isdir(os.path.join(dir_path, item))]
     return len(problems)
 
 

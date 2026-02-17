@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - '260*/**'  # Trigger when any file in date directories changes
+      - '[0-9][0-9][0-9][0-9][0-9][0-9]/**'  # Trigger when any file in date directories (YYMMDD format) changes
   workflow_dispatch:  # Allow manual trigger
 
 jobs:
