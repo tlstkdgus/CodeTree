@@ -7,7 +7,7 @@ public class Main {
         
         int num = 1;
         for(int j=n-1; j>=0; j--){
-            if(j%2 !=0){
+            if((n-1-j)%2 ==0){
                 for(int i=n-1; i>=0; i--){
                     arr[i][j] = num++;
                 }
