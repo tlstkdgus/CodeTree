@@ -7,21 +7,17 @@ public class Main {
         int m = sc.nextInt();
 
         int[][] arr = new int[n][n];
+        int num = 1;
         for(int i=0; i<m; i++){
             int r = sc.nextInt()-1;
             int c = sc.nextInt()-1;
-            arr[r][c] = 1;
+            arr[r][c] = num;
+            num++;
         }
 
-        int num = 1;
         for(int i=0; i<n; i++){
             for(int j=0; j<n; j++){
-                if(arr[i][j] == 1){
-                    System.out.print(num + " ");
-                    num++;
-                }else{
-                    System.out.print(0 + " ");
-                }
+                System.out.print(arr[i][j] + " ");
             }
             System.out.println();
         }   
