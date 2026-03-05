@@ -5,7 +5,11 @@ public class Main {
         int A = sc.nextInt();
         int B = sc.nextInt();
         int C = sc.nextInt();
-        
-        System.out.println(((A-11)*60*24 + B*60 + C) - 11*60 -11); 
-    }
+        int total = ((A-11)*60*24 + B*60 + C) - 11*60 -11;
+        if(total<0){
+            System.out.println(-1);
+        }else{
+            System.out.println(total);
+        }
+        }
 }
