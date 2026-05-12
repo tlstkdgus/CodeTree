@@ -82,7 +82,7 @@ CodeTree/
 
 ---
 
-**Last Updated**: 2026-05-11  
+**Last Updated**: 2026-05-12  
 **Total Days**: 20일 연속 학습  
 **Total Problems**: 277개 문제 해결  
 **Total XP**: 3090 XP 획득
